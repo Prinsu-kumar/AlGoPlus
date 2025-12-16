@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const axiosClient =  axios.create({
-    baseURL:'https://one4dev-backend.onrender.com',
+    baseURL: import.meta.env.VITE_API_URL||'https://one4dev-backend.onrender.com',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
